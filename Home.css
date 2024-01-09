@@ -149,6 +149,56 @@ body, h1, h2, h3, p, ul, li {
   }
 }
 
+/*Phones  */
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  nav ul li {
+    display: block; /* Change the navigation items to a block for easier tapping on smaller screens */
+    margin-bottom: 10px;
+  }
+
+  .service-item {
+    flex: 0 1 100%; /* Make service items take full width on smaller screens */
+  }
+
+  .service-item .btn {
+    display: block; /* Convert buttons to block elements for better visibility and tapping */
+    width: 100%; /* Make buttons take full width */
+    margin-top: 15px;
+  }
+}
+
+/* For even smaller screens (phones) */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 24px; /* Further reduce font size for smaller screens (phones) */
+  }
+
+  .hero {
+    padding: 60px 0; /* Adjust hero section padding for smaller screens */
+  }
+
+  .service-item {
+    padding: 15px; /* Adjust service item padding for smaller screens */
+    margin-bottom: 15px; /* Adjust margin for service items on phones */
+  }
+
+  .service-item h3 {
+    font-size: 20px; /* Adjust service item heading size for phones */
+  }
+
+  .about p {
+    font-size: 16px; /* Adjust font size for paragraphs in the about section */
+    line-height: 1.5; /* Adjust line height for better readability on phones */
+  }
+}
+
+
+
   
   
   
