@@ -127,6 +127,28 @@ body, h1, h2, h3, p, ul, li {
   footer p {
     font-size: 14px;
   }
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  nav ul li {
+    display: block; /* Change the navigation items to a block for easier tapping on smaller screens */
+    margin-bottom: 10px;
+  }
+
+  .service-item {
+    flex: 0 1 100%; /* Make service items take full width on smaller screens */
+  }
+
+  .service-item .btn {
+    display: block; /* Convert buttons to block elements for better visibility and tapping */
+    width: 100%; /* Make buttons take full width */
+    margin-top: 15px;
+  }
+}
+
   
   
   
