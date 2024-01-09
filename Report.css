@@ -1,0 +1,179 @@
+
+/* this is the start of the css section for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    /* background-image: url(3d384d829dbf4b678cfea617114e149d.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%; */
+  }
+
+
+  /* Navigation section*/
+  nav {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block; /* Change display to inline-block */
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+  }
+  /* end of navigation */
+
+  /* begining of header */
+  
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+  /* Report Lost section */
+  #reportLost {
+    margin-bottom: 40px;
+  }
+  
+  #reportLost h2 {
+    margin-bottom: 15px;
+    color: #4CAF50;
+  }
+  
+  #lostForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #lostForm label {
+    margin-bottom: 5px;
+  }
+  
+  #lostForm input[type="text"],
+  #lostForm textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  #lostForm button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #lostForm button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  /* Found Items section */
+  #foundItems {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  #itemsList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #itemsList li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  #itemsList strong {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  #itemsList button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #itemsList button:hover {
+    background-color: #0056b3;
+  }
+  /* Custom styling for the file upload button */
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Styling the file input */
+#itemImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+  

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- header for my lost and found report section -->
+  <title>Lost and Found-Report</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="Report.css">
+</head>
+<body>
+
+  <!-- the header section begin here -->
+  <header>
+    <h1>Lost and Found</h1>
+  </header>
+  <nav>
+    <!-- with in the header there is the navigation -->
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!--   the main body of the report section -->
+  <main>
+    <section id="reportLost">
+      <h2>Report a Lost Item</h2>
+      <form id="lostForm">
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" required>
+
+        <label for="itemName">Location of find:</label>
+        <input type="text" id="itemName" required>
+
+
+
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea>
+
+      
+        <div class="file-upload">
+          <label for="itemImage" class="file-label">Choose Image</label>
+          <input type="file" id="itemImage" accept="image/*" required onchange="previewImage(event)">
+        </div>
+        
+
+
+        <button type="submit">Report Lost</button>
+      </form>
+    </section> 
+    <!-- footer for the report section -->
+    
+  </main>
+
+
+</body>
+</html>
